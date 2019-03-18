@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+     <bean id="myMouthSurgery" class = "HospitalXml.MouthSurgery"></bean>
+     
+     
+    <bean id="profil" class="HospitalXml.Patient">
+    		<constructor-arg ref="myMouthSurgery"></constructor-arg> 
+    		<property name="id" value="001"></property>
+			<property name="name" value="Filano"></property>
+	    	<property name="email" value="filano@gmail.com"></property>
+	    	<property name="nohp" value="081232499930"></property>
+			
+	</bean>
+        
+</beans>
